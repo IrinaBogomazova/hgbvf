@@ -1,0 +1,916 @@
+@font-face {
+  font-family: "English157BT";
+  src: url("fonts/TT0840M.TTF");
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("fonts/ARIAL.TTF");
+}
+
+@font-face {
+  font-family: "Tahoma";
+  src: url("fonts/TAHOMA.TTF");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial";
+}
+
+body {
+    position: relative;
+    background-color: #e6e6e6;
+}
+
+header {
+    background-color: #466678;
+    position: relative;
+}
+
+.date {
+    display: block;
+    padding: 1.1vw;
+    margin-left: 12.1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    letter-spacing: 0.7vw;
+    
+}
+
+.header_center {
+    background-color: #99b2bf;
+    display: flex;
+    align-items: center;
+}
+
+.header_center img {
+    width: 14vw;
+    margin-left: 21vw;
+    position: absolute;
+    border: 1vw solid #b81e1e;
+    z-index: 2;
+}
+
+h1, .date {
+    padding-left: 20vw;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h1 {    
+    position: relative;
+    padding: 1.7vw;
+    line-height: 1.6vw;
+    width: 40%;
+    padding-left: 40.9vw;
+}
+
+h2 {
+    font-size: 1.63vw;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2vw;
+}
+
+.h1_1 {
+    font-size: 2vw;
+    letter-spacing: 0.73vw;
+}
+
+.h1_2 {
+    margin-left: -0.5vw;
+    font-size: 1.05vw;
+    letter-spacing: 0.3vw;
+}
+
+.header_bottom {
+    padding: 1.5vw;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.header_email {
+    background-color: #e6e6e6;
+    width: 77vw;
+    margin: auto;
+    padding: 0.7vw;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 9.1vw;
+}
+
+.email {
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
+    margin-right: 2.3vw;
+    text-decoration: none;
+    color: #969696;
+}
+
+.tel {
+    font-size: 1.3vw;
+    letter-spacing: 0.7vw;
+    text-decoration: none;
+    color: #969696;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    background:  #466678;
+    width: 80%;
+    margin: auto;
+    padding: 0 10%;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1vw;
+    display: block;
+    padding: 0.6vw 0.8vw;
+}
+
+#menu_item_1 {
+   padding-left: 1.5vw;
+   padding-right: 1.5vw;
+}
+
+#button4 {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+#button5 {
+    width: 12vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+#button6 {
+    width: 8vw;
+}
+
+#menu_item_7 {
+   padding-left: 1.4vw;
+   padding-right: 1.4vw;
+}
+
+.fixed-menu-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 67%;
+  padding: 0 16.5%;
+  background: #466678;
+  z-index: 2;
+}
+
+.absolute-menu {
+  position: absolute;
+  left: 0;
+  background:  #466678;
+  width: 67%;
+  margin: auto;
+  bottom: -2.2vw;
+  padding: 0 16.5%;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    color: #fff;
+    font-size: 1.1vw;
+    display: block;
+    width: 10vw;
+}
+
+.menu a:hover, .dropbtn:hover {
+    background-color: #314e5e;
+    color: #fff;
+}
+
+.active {
+    background-color: #314e5e;
+    color: #fff;
+}
+
+#button2 {
+    background-color: #314e5e;
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    background-color: #466678;
+    display: none;
+    position: absolute;
+    width: 10vw;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+}
+
+#myDropdown5 {
+    width: 12vw;
+}
+
+#myDropdown6 {
+    width: 8vw;
+}
+
+.dropdown-content a {
+    color: #fff;
+    /*padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+    border-bottom: 0.1vw solid #fff;
+    text-align: center;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+main {
+    padding: 5vw 4vw 3vw;
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+}
+
+.top_text {
+    text-align: center;
+    color: #6a6a6a;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.main_h2 {
+    font-size: 1.63vw;
+    text-align: center;
+    margin-top: 2vw;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 1vw;
+    text-align: center;
+    padding: 1.5vw;
+    color: gray;
+}
+
+.footer1 {
+    margin-bottom: 1vw;
+}
+
+
+/*---------------ГОТОВЫЕ СЮЖЕТЫ---------------*/
+
+
+.stories_flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vw;
+    align-items: center;
+}
+
+.main_stories video {
+    width: 38%;
+}
+
+.stories_flex_div1 {
+    width: 50%;
+    font-size: 1.2vw;
+}
+
+.stories_flex img {
+    width: 10vw;
+}
+
+.stories_flex p {
+    margin-bottom: 1.2vw;
+}
+
+.stories_img_container {
+    text-align: right;
+}
+
+.collection {
+   text-align: center;
+   margin-top: 3vw;
+}
+
+.collection img {
+    width: 28%;
+    margin: 0 1vw;
+}
+
+
+/*------------- ДАННЫЕ ДЛЯ ЗАКАЗА -------------*/
+
+.main_order h3 {
+    font-size: 1.7vw;
+    text-align: center;
+    margin-top: 2vw;
+    font-weight: normal;
+}
+
+.main_order ol {
+    font-size: 1.3vw;
+    margin-top: 1vw;
+}
+
+.main_order img {
+    width: 25%;
+    vertical-align: top;
+    margin: 3vw 2vw 2vw;
+}
+
+.order_img_container {
+    text-align: center;
+}
+
+.order_img_container div {
+    text-align: left;
+    padding-left: 2vw;
+}
+
+
+/*------------- КАЧЕСТВО ------------*/
+
+.index_images {
+    text-align: center;
+}
+
+.index_images img {
+    width: 30%;
+    height: 20vw;
+    margin: 2vw 0.9vw;
+}
+
+.main_index_p1, .main_index_center {
+    margin: 1vw 0;
+    text-align: center;
+}
+
+.main_index_p2 {
+    text-align: center;
+    font-weight: bold;
+    color: #ff3333;
+}
+
+.main_index_p3 {
+    text-align: justify;
+}
+
+.main_index_h2_2 {
+    font-size: 1.30vw;
+    text-align: center;
+    margin: 2vw 0;
+}
+
+.main_index_p4 {
+    padding-left: 1vw;
+}
+
+.main_index_center2 {
+    margin: 1vw 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.main_index_bold {
+    font-weight: bold;
+}
+
+.main_index_p5 {
+    font-weight: bold;
+    color: #ff3333;
+}
+
+.long_img {
+    width: 100%;
+}
+
+/*------------- КОНТАКТЫ -------------*/
+
+.main_p_in_border {
+    margin: 1.5vw 0;
+    background-color: #466678;
+    color: #fff;
+    text-align: center;
+    padding: 0.3vw;
+}
+
+.main_contacts_email a {
+    color: black;
+    text-decoration: none;
+}
+
+.main_contacts_flex {
+    display: flex;
+}
+
+.main_contacts_flex a {
+    color: black;
+    text-decoration: none;
+}
+
+.probel {
+    padding-left: 0.3vw;
+}
+
+iframe {
+    width: 100%;
+    height: 40vw;
+    margin-bottom: 30vw;
+}
+
+/*------------- НАШИ РАБОТЫ -------------*/
+
+.main_p_in_border2 {
+    margin-bottom: 2.3vw;
+}
+
+.works_item_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.works_item {
+    width: 46%;
+    text-align: center;
+}
+
+.works_item img {
+    width: 100%;
+}
+
+.works_item p {
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+
+/*------------- ТЕХНОЛОГИЯ ------------*/
+
+.technology_h2 {
+    margin: 1.5vw 0;
+    color: #d01616;
+}
+
+.technology_center {
+    text-align: center;
+}
+
+.technology_ul {
+    font-size: 1.1vw;
+}
+
+.technology_img_container {
+    text-align: center;
+    margin-top: 1.5vw;
+}
+
+.technology_img_container img {
+    display: inline-block;
+    width: 28%;
+    margin: 0 1.5vw 0;
+}
+
+/*------------- ТРЕБОВАНИЯ --------------*/
+
+.main_requirements ol {
+    font-size: 1.2vw;
+}
+
+.main_requirements h2 {
+    margin-bottom: 1.5vw;
+}
+
+.requirements_bottom_p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7vw;
+    margin: 3vw 0 25vw;
+}
+
+/*------------ ЦЕНЫ ------------*/
+
+.prices_h2 {
+    font-size: 1.8vw;
+}
+
+.prices_h3 {
+    font-size: 1.3vw;
+    margin-top: 3vw;
+}
+
+.main_prices {
+    font-size: 1.2vw;
+}
+
+.main_prices ol {
+    padding-left: 1.4vw;
+    padding-top: 1vw;
+    list-style-type: upper-roman;
+}
+
+.prices_li {
+    margin-bottom: 1vw;
+}
+
+/*------------- ОТЗЫВЫ -------------*/
+
+.main_reviews h2 {
+    margin: 1vw 0;
+}
+
+.main_reviews_div1 {
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+.main_reviews_div1 img {
+    width: 5.3vw;
+}
+
+.main_reviews_div2 {
+    text-align: center;
+    margin-bottom: 30vw;
+}
+
+.main_reviews_div2 img {
+    width: 14vw;
+    margin: 1vw;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+    .header_center img {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .header_center img {
+        width: 16vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .header_center img {
+        width: 17vw;
+    }
+
+    .header_bottom {
+        padding-bottom: 1vw;
+    }
+
+    h1 {
+        width: 70%;
+        padding-left: 32vw;
+    }
+
+    .header_email {
+        width: 77vw;
+        padding-right: 4vw;
+    }
+
+    .date {
+        font-size: 3vw;
+        margin-right: 2vw;
+    }
+
+    .h1_1 {
+        font-size: 2.3vw;
+    }
+
+    .h1_2 {
+        font-size: 1.2vw;
+    }
+
+    .email {
+        font-size: 1.5vw;
+    }
+
+    .tel {
+        font-size: 1.5vw;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-top: 0;
+        position: absolute;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    .menu__btn {
+        display: flex; 
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 3vw;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 6;
+    }
+
+    li a, #button1, #button2, #button3 {
+        color: white;
+        display: block;
+        width: 100%;
+        padding: 3% 0;
+        text-decoration: none;
+        font-size: 4vw;
+        text-align: center;
+    }
+    .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .menu__btn > span::before {
+        content: ''; 
+        top: -8px;
+    }
+
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__btn > span::after {
+        content: ''; 
+        top: 8px;
+    }
+
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed; /*фиксируем сверху экрана*/
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #466678;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2); /*задаем тень по желанию*/
+        z-index: 5;
+    }
+
+    /* элементы меню */
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #ECEFF1;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before{
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+
+    .menu__box {
+        transition-duration: .25s;
+    }
+
+    .menu__item {
+        transition-duration: .25s;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .dropdown-content a {
+       background-color: #314e5e;
+    }
+
+    .top_text {
+        font-size: 2vw;
+    }
+
+    .main_h2 {
+        font-size: 2.5vw;
+    }
+
+    footer {
+        font-size: 1.8vw;
+    }
+
+    h2 {
+        font-size: 2.8vw;
+    }
+
+    p {
+        font-size: 2.2vw;
+    }
+
+
+    /*------------- ГОТОВЫЕ СЮЖЕТЫ МОБИЛ --------------*/
+
+    .stories_flex {
+        display: block;
+        text-align: center;
+    }
+
+    .main_stories video {
+        width: 60%;
+    }
+
+    .stories_flex_div1 {
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    .stories_flex img {
+        width: 15vw;
+        display: none;
+    }
+
+    .stories_flex p {
+        margin-bottom: 1.2vw;
+        margin-top: 1.5vw;
+        text-align: justify;
+    }
+
+    .stories_img_container {
+        text-align: center;
+    }
+
+    .collection {
+       text-align: center;
+       margin-top: 3vw;
+    }
+
+    .collection img {
+        width: 40%;
+        margin: 0;
+    }
+
+
+    /*------------ ДАННЫЕ ДЛЯ ЗАКАЗА МОБИЛ --------------*/
+
+    .main_order h3 {
+        font-size: 2.8vw;
+    }
+
+    .main_order ol {
+        font-size: 2.2vw;
+        margin-top: 1vw;
+    }
+
+    .main_order img {
+        width: 70%;
+        margin: 3vw 0 2vw;
+    }
+
+    .order_img_container div {
+        text-align: center;
+    }
+
+
+    /*------------ КАЧЕСТВО МОБИЛ --------------*/
+
+    .main_index_h2_2 {
+        font-size: 2.3vw;
+    }
+
+    .index_images img {
+        width: 70%;
+        height: 45vw;
+    }
+
+    /*------------- ТЕХНОЛОГИИ МОБИЛ  -------------*/
+
+    .technology_ul {
+        font-size: 2.2vw;
+        padding-left: 4vw;
+    }
+
+    /*------------- ТРЕБОВАНИЯ МОБИЛ ---------------*/
+
+    .main_requirements ol {
+        font-size: 2.2vw;
+        padding-left: 4vw
+    }
+
+    .requirements_bottom_p {
+        font-size: 2.3vw;
+        margin: 3vw 0;
+    }
+
+    .main_requirements h2 {
+        margin: 3vw 0;
+    }
+
+    /*------------- ЦЕНЫ МОБИЛ -----------*/
+
+    .prices_h2 {
+        font-size: 2vw;
+    }
+
+    .prices_h3 {
+        font-size: 2.2vw;
+    }
+
+    .main_prices ol {
+        font-size: 2.2vw;
+    }
+
+    .prices_li {
+        margin-bottom: 1vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .header_center img {
+        width: 20vw;
+    }
+}
